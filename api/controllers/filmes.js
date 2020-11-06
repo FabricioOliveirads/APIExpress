@@ -13,9 +13,9 @@ module.exports = app => {
   controller.saveFilmes = (req, res) => {
     filmesMock.data.push({
       id: uuidv4(),
-      title: req.body.title,
-      year: req.body.year,
-      type: req.body.type
+      titulo: req.body.titulo,
+      ano: req.body.ano,
+      genero: req.body.genero
     });
 
     res.status(201).json(filmesMock);
@@ -54,9 +54,9 @@ module.exports = app => {
         filmes: filmesMock,
       });
     }else {
-      filmesMock.data[foundFilmeIndex].title =  req.body.title;
-      filmesMock.data[foundFilmeIndex].year =  req.body.year;
-      filmesMock.data[foundFilmeIndex].type =  req.body.type;
+      filmesMock.data[foundFilmeIndex].title =  req.body.titulo;
+      filmesMock.data[foundFilmeIndex].year =  req.body.ano;
+      filmesMock.data[foundFilmeIndex].type =  req.body.genero;
 
       
       res.status(200).json({

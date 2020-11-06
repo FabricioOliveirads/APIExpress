@@ -3,21 +3,21 @@
       "data": [
         {
           "id": "1",
-          "title": "Batman",
-          "year": "2010",
-          "type": "Adventure"
+          "titulo": "Batman",
+          "ano": "2010",
+          "genero": "Adventure"
         },
         {
           "id": "2",
-          "title": "Era do gelo",
-          "year": "2012",
-          "type": "Infantil"
+          "titulo": "Era do gelo",
+          "ano": "2012",
+          "genero": "Infantil"
         },
         {
           "id": "3",
-          "title": "Jurassic Park ",
-          "year": "1999",
-          "type": "Terror"
+          "titulo": "Jurassic Park ",
+          "ano": "1999",
+          "genero": "Terror"
         }
       ]
     }
